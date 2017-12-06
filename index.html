@@ -25,12 +25,11 @@
                     <li><a href="catalog.html">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лед</a></li>
-                    <li><a href="#">Мелорин</a></li>
+                    <li><a href="#">Мелорин</a></li>                    
                   </ul>                
                 </li>    
-                <li><a href="delivery.html">Доставка и оплата</a></li>
-                <li><a href="about-us">О компании</a></li>
-              </ul>
+                <li class="delivery-payment"><a href="delivery.html">Доставка и оплата</a></li>
+                <li class="company"><a href="about-us">О компании</a></li>
             </div>       
             <ul class="user-navigation">
               <li class="cart empty-cart"><a class="empty-cart-link" href="#">Пусто</a></li>
@@ -57,12 +56,20 @@
                   </li>
                 </ul>
               </li>           
-              <li class="search"><a class="search-link" href="#"><div class="search-loupe"></div><p class="visually-hidden">Поиск</p></a>
-                <ul class="">
+              <li class="search">
+                <a class="search-link" href="#">
+                  <div class="search-loupe">
+                    <div class="search-loupe-help"></div>
+                  </div>
+                  <p class="visually-hidden">Поиск</p>
+                </a>
+                <ul class="search-dropdown">
+                <li>
                   <form class="search-form">
                     <input type="search" name="search" placeholder="Что ищем?">        
                   </form>
-                </ul>
+                </li>
+              </ul>
               </li>
             </ul>
           </div> 
@@ -172,10 +179,10 @@
           <li class="blog-item">
             <article class="blog">
               <h2 class="visually-hidden">Блог</h2>
-              <img src="img/blog.jpg" width="558px" height="220px" class="blog-img" alt="10 способов сервировки фруктовых щербетов">
+              <img src="img/blog.jpg" width="558" height="220" class="blog-img" alt="10 способов сервировки фруктовых щербетов">
               <p class="blog-news">Новое в нашем блоге</p>
               <h3><a href="blog/blog-article.html">10 способов сервировки <br>фруктовых щербетов к<br>столу</a></h3>
-              <img src="img/underline.png" width="279px" height="60px" class="underline">
+              <img src="img/underline.png" width="279" height="60" class="underline">
             </article>
           </li>
           <li class="subscribe-item">
@@ -202,7 +209,7 @@
           <div class="contact-information">
             <p class="contact">Адрес главного офиса <br> и офлайн-магазина:<br><span class="contacts-base">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span></p>
             <p class="contact-tel">Для заказов по телефону:<br><span class="contacts-base">8 812 450-25-25</span><br><span class="contacts-time">(c 10 до 20 ежедневно)</span></p>
-            <a class="button" href="#">Форма обратной связи</a>
+            <a class="button" href="form.html">Форма обратной связи</a>
           </div>
         </div>           
       </section>
@@ -211,7 +218,7 @@
       <div class="main-footer-wrapper">
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" title="Твиттер">
               <span class="visually-hidden">Твиттер</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" class="border">
                 <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)" d="M18.925,0.237 C29.209,0.237 37.545,8.573 37.545,18.857 C37.545,29.140 29.209,37.476 18.925,37.476 C8.642,37.476 0.306,29.140 0.306,18.857 C0.306,8.573 8.642,0.237 18.925,0.237 ZM18.865,3.228 C27.531,3.228 34.556,10.253 34.556,18.919 C34.556,27.586 27.531,34.611 18.865,34.611 C10.198,34.611 3.173,27.586 3.173,18.919 C3.173,10.253 10.198,3.228 18.865,3.228 Z"/>
@@ -221,7 +228,7 @@
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" title="Инстаграм">
               <span class="visually-hidden">Инстаграм</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" class="border">
                 <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)" d="M18.925,0.237 C29.209,0.237 37.545,8.573 37.545,18.857 C37.545,29.140 29.209,37.476 18.925,37.476 C8.642,37.476 0.306,29.140 0.306,18.857 C0.306,8.573 8.642,0.237 18.925,0.237 ZM18.865,3.228 C27.531,3.228 34.556,10.253 34.556,18.919 C34.556,27.586 27.531,34.611 18.865,34.611 C10.198,34.611 3.173,27.586 3.173,18.919 C3.173,10.253 10.198,3.228 18.865,3.228 Z"/>
@@ -236,7 +243,7 @@
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" title="Фэйсбук">
               <span class="visually-hidden">Фэйсбук</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" class="border">
                 <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)" d="M18.925,0.237 C29.209,0.237 37.545,8.573 37.545,18.857 C37.545,29.140 29.209,37.476 18.925,37.476 C8.642,37.476 0.306,29.140 0.306,18.857 C0.306,8.573 8.642,0.237 18.925,0.237 ZM18.865,3.228 C27.531,3.228 34.556,10.253 34.556,18.919 C34.556,27.586 27.531,34.611 18.865,34.611 C10.198,34.611 3.173,27.586 3.173,18.919 C3.173,10.253 10.198,3.228 18.865,3.228 Z"/>
@@ -247,7 +254,7 @@
             </a>
           </li>
           <li>
-            <a class="social-button" href="#">
+            <a class="social-button" href="#" title="Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" class="border">
                 <path fill-rule="evenodd"  opacity="0.502" fill="rgb(255, 255, 255)" d="M18.925,0.237 C29.209,0.237 37.545,8.573 37.545,18.857 C37.545,29.140 29.209,37.476 18.925,37.476 C8.642,37.476 0.306,29.140 0.306,18.857 C0.306,8.573 8.642,0.237 18.925,0.237 ZM18.865,3.228 C27.531,3.228 34.556,10.253 34.556,18.919 C34.556,27.586 27.531,34.611 18.865,34.611 C10.198,34.611 3.173,27.586 3.173,18.919 C3.173,10.253 10.198,3.228 18.865,3.228 Z"/>
@@ -293,7 +300,7 @@
           <p class="feedback-submit">
             <button type="submit" class="send">Отправить</button>
           </p>
-          <div class="feedback-form-cross"></div>
+          <button class="feedback-form-cross" title="Закрыть"></button>
       </form>       
     </footer>
   </div>
