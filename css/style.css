@@ -401,6 +401,8 @@ a {
   -o-transition: background-image 0.5s ease, background-color 0.5s ease;
 
   transition: background-image 0.5s ease, background-color 0.5s ease;
+
+  margin: 0 auto;
 }
 
 .container {
