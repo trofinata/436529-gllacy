@@ -279,8 +279,14 @@ iframe {
 
   background-image: url(../img/basket-red.svg);
   background-repeat: no-repeat;
-  background-position: 20% center;
+  background-position: 14% center;
   background-color: #f7f6f3;
+}
+
+.cart.full-cart:hover {
+  background-image: url(../img/basket-red.svg);
+  background-repeat: no-repeat;
+  background-position: 14% center;
 }
 
 .cart.full-cart a {
@@ -1300,6 +1306,10 @@ input .visually-hidden {
   vertical-align: middle;
   padding-top: 2px;
 
+  text-decoration: none;
+
+  color: #323232;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1435,6 +1445,14 @@ input .visually-hidden {
   margin: 0;  
 }
 
+.footer-copyright a {
+  display: inline;
+}
+
+.copyright-text {
+  white-space: nowrap;
+}
+
 .footer-social {
   width: 187px;
   padding: 0;
@@ -1521,7 +1539,7 @@ input .visually-hidden {
 }
 
 .footer-copyright {
-  width: 190px;
+  width: 300px;
   margin-left:  auto;
 }  
 
@@ -2397,7 +2415,7 @@ li.site-navigation-current:hover a {
 
   font-weight: 600;
 
-  width: 211px;
+  width: 213px;
   height: 36px;
 
   padding-left: 9px;
