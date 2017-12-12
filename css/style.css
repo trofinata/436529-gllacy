@@ -35,6 +35,9 @@ iframe {
 
 .inner-page .main-header {
   max-height: 113px;
+
+  padding-top: 3px;
+  margin-bottom: 10px;
 }
 
 .main-header {
@@ -166,7 +169,7 @@ iframe {
 }
 
 .user-navigation {
-  width: 263px;
+  width: 265px;
   height: 33px; 
   padding: 0;
   padding-top: 17px;      
@@ -222,32 +225,53 @@ iframe {
           box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.64);
 }
 
-.search {
-  max-width: 33px;
-
-  position: relative;
+ul.search-dropdown {
+  -webkit-padding-start: 0px;
 }
 
 .search ul {
   list-style: none;
 }
+ 
+.search-loupe-help {
+  position: absolute;  
 
-.search-loupe { 
-  width: 33px;
+  top: 0px;
+  left: 5px;
+
+  background-image: url(../img/loupe-black.png);
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+
+.search:hover .search-loupe-help {  
+  display: block;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.user-navigation li:nth-child(3) { 
+  position: relative;
+
+  width: 43px;
   height: 33px;
 
   background-image: url(../img/loupe.svg);
   background-repeat: no-repeat;
-  background-position: center;    
+  background-position: center; 
+
+  border-radius: 100px;   
 }
 
-.user-navigation .search-loupe:hover {
+.user-navigation li:nth-child(3):hover {
   background-image: url(../img/loupe-black.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.search-dropdown li:hover.search-loupe {
+.search-dropdown li:nth-child(3):hover.search-loupe {
   background-image: url(../img/loupe-black.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -364,7 +388,7 @@ iframe {
   display: none;
 }
 
-.cart {
+.full-cart {
   width: 118px;
   margin-left: 7px;
 }
@@ -413,7 +437,7 @@ iframe {
   display: inline-block;
   vertical-align: middle;
 
-  margin-bottom: 7px;  
+  margin-bottom: 15px;
 }
 
 .telephone {
@@ -422,6 +446,8 @@ iframe {
   font-weight: 700;
   
   color: #ffffff;
+
+  display: block;
 }
 
 .site-wrapper {
@@ -615,7 +641,7 @@ input .visually-hidden {
 }
 
 .banner {
-  margin-bottom: 40px;
+  margin-bottom: 40px;  
 }
 
 .banner-actions {
@@ -623,9 +649,9 @@ input .visually-hidden {
 
   color: #ffffff;
 
-  width: 1146px;
+  width: 1146px;  
   margin: 0 auto; 
-    padding: 0;
+  padding: 0;
 
   display: -webkit-box;
 
@@ -634,34 +660,52 @@ input .visually-hidden {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  
-  height: 230px;
+          justify-content: space-between;  
 }
 
 .banner-actions-item {
-  min-width: 560px;
-  overflow: hidden;
+  min-width: 560px;  
 
   border-radius: 20px;  
+}
+
+.actions-raspberry {
+  background-image: url(../img/raspberry-back.jpg);
+  background-color: #B22222;  
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  width: 520px;  
+
+  border-radius: 15px;
+}
+
+.actions-choco {
+  background-image: url(../img/chocolate-back.jpg);
+  background-color: #4f0c0c;  
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  width: 520px;  
+
+  border-radius: 15px;
 }
 
 .banner-actions-item div {
   display:inline-block; 
   vertical-align: middle;  
-  position:relative;
-}
-
-.banner-actions-item div p {  
-  display:inline-block;
-  vertical-align: middle;
-  position:absolute;
-  top:52px;   
-  left:20px;
+  position:relative; 
 
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
+
+  padding-top: 72px;
+  padding-bottom: 113px;
+  padding-left: 20px; 
+  padding-right: 20px; 
 }
 
 .banner-actions-item div h4 {
@@ -674,10 +718,6 @@ input .visually-hidden {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-}
-
-.banner-actions-item img {
-  margin: -90px -113.5px -90px -113.5px;
 }
 
 .banner-actions div a {
@@ -984,8 +1024,9 @@ input .visually-hidden {
 
 .feature-item {
   position: relative;
-  width: 500px;
-  padding-bottom: 22px; 
+  width: 480px;
+  padding-bottom: 22px;
+  padding-right: 20px; 
 }
 
 .feature-item::before {
@@ -1145,6 +1186,12 @@ input .visually-hidden {
   cursor: pointer;
 }
 
+.input-wrapper {
+  width: 367px;
+  height: 51px;
+  margin-right: 13px;  
+}
+
 .subscription-form input {
   border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 5px;
@@ -1168,10 +1215,18 @@ input .visually-hidden {
 
 .subscription-form input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
+
+  padding-bottom: 9px;
+  padding-top: 9px;
+  padding-left: 11px;
 }
 
 .subscription-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
+
+  padding-bottom: 9px;
+  padding-top: 9px;
+  padding-left: 11px;
 }
   
 .subscription-form input::-webkit-input-placeholder {
@@ -1277,7 +1332,9 @@ input .visually-hidden {
   
   margin-right: 25px;
 
-  border-radius: 15px;  
+  border-radius: 15px;
+
+  z-index: 2;  
 }  
 
  .contact {
@@ -1290,6 +1347,11 @@ input .visually-hidden {
   padding-left: 25px; 
 
   position: relative;       
+}
+
+.contact-addres {
+  display: block;
+  width: 149px;
 }
 
  .contact-tel { 
@@ -1313,10 +1375,14 @@ input .visually-hidden {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+
+  width: 227px;
 }
 
  .contacts-time {
   line-height: 22px;
+
+  display: block;
 }
 
  .button-feedback-form {
@@ -1367,8 +1433,38 @@ input .visually-hidden {
   
   margin: 0 auto;
 
-  max-height: 430px;
+  max-height: 430px;  
 }
+
+.map iframe {
+  position: relative;
+  z-index: 2;
+}
+
+.map-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 431px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;  
+}
+
+.map-static {
+  z-index: 1;
+
+  position: relative;
+}
+
+.map-pin {
+  position: absolute;
+  top: 143px;
+  left: 259px;
+
+  z-index: 1;
+} 
 
  .footer-social ul {
   list-style: none;
@@ -1582,6 +1678,10 @@ input .visually-hidden {
     padding-right: 78px;
 }
 
+.inner-page .logo-html {
+  text-align: left; 
+}
+
 .site-navigation-filter {
   list-style: none;
 
@@ -1663,12 +1763,28 @@ li.site-navigation-current:hover a {
   font-size: 14px;
 }
 
+.login-input-wrapper {
+  width: 279px;
+  height: 45px;
+  padding-bottom: 23px; 
+}
+
 .login-form input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
+
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
 
 .login-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
+
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 9px;
+  padding-top: 9px;
 }
   
 .login-form input::-webkit-input-placeholder {
@@ -1789,10 +1905,14 @@ li.site-navigation-current:hover a {
 
 .search-form input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
+
+  padding: 14px;
 }
 
 .search-form input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
+
+  padding: 14px;
 }
   
 .search-form input::-webkit-input-placeholder {
@@ -1804,13 +1924,13 @@ li.site-navigation-current:hover a {
 .search-form input:-ms-input-placeholder {
   color: #999999;
 
-  font-weight: 400;
+  font-weight: 400;   
 }
   
 .search-form input::-ms-input-placeholder {
   color: #999999;
 
-  font-weight: 400;
+  font-weight: 400;  
 }
   
 .search-form input::placeholder {
@@ -1931,7 +2051,7 @@ li.site-navigation-current:hover a {
 
 .modal-feedback-form {
   position: fixed;
-  top: 20%; 
+  top: 10%; 
   left: 30%;
 
   background-color: #f8f7f4;
@@ -1947,6 +2067,18 @@ li.site-navigation-current:hover a {
   padding-right: 25px;
 
   display: none;
+
+  z-index: 2;
+}
+
+.modal-input-wrapper {
+  width: 281px;
+  height: 36px;
+}
+
+.modal-textarea-wrapper {
+  width: 436px;
+  height: 167px;
 }
 
 .modal-show {
@@ -1986,7 +2118,7 @@ li.site-navigation-current:hover a {
 
   border-radius: 5px;
     
-    padding: 0;
+  padding: 0;
   padding-left: 15px;
   padding-top: 5px;
 }
@@ -2045,14 +2177,35 @@ li.site-navigation-current:hover a {
   font-size: 14px;
 }
 
-.feedback-form input:hover,
 .feedback-form textarea:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
+  
+  padding: 0;
+  padding-left: 14px;
+  padding-top: 4px;
 }
 
-.feedback-form input:focus,
+.feedback-form input:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  
+  padding: 0;
+  padding-left: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
 .feedback-form textarea:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.feedback-form input:focus {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  padding: 0;
+  padding-left: 14px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
   
 .feedback-form input::-webkit-input-placeholder,
@@ -2899,7 +3052,7 @@ table img {
 
   display: none; 
 
-  z-index: 1;   
+  z-index: 1;
 }
 
 .dropdown li {
@@ -3013,8 +3166,7 @@ table img {
 .search-form {
   max-width: 343px;
   background-color: #f8f7f4;
-
-  padding: 0;
+  
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 17px;
@@ -3024,36 +3176,9 @@ table img {
 
   position: absolute;
   top:33px; 
-  left: -340px;
+  left: -310px;
 
-  display: none;     
-}
-
-.search-loupe {
-  position: relative;
-}
- 
-.search-loupe-help {
-  position: absolute;
-  width: 33px;
-  height: 33px;
-
-  top: 0px;
-  left: 0px;
-
-  background-image: url(../img/loupe-black.png);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  display: none;
-}
-
-.search:hover .search-loupe-help {  
-  display: block;
-
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  display: none;    
 }
 
 .search-form input {
@@ -3067,7 +3192,11 @@ table img {
   padding: 15px;
 
   max-height: 45px;
-  min-width: 343px; 
+  width: 311px; 
+}
+
+.search-wrapper {
+  width: 312px;     
 }
 
 .search:hover .search-form {
@@ -3075,7 +3204,7 @@ table img {
 
   position: absolute;
   top:33px; 
-  left: -340px;
+  left: -310px;
 }
 
 .login-form {
@@ -3092,7 +3221,7 @@ table img {
   top: 34px; 
   left: -222px;
 
-  display: none;  
+  display: none; 
 }
 
 .login-form .login-form-into {
@@ -3144,6 +3273,14 @@ table img {
           justify-content: space-between;
 }
 
+.login-note {
+  display: inline-block;
+
+  width: 124px;
+
+  text-align: left;
+}
+
 .login-note a {
   color: #323232;
 
@@ -3153,11 +3290,18 @@ table img {
   border-bottom: 1px solid #adacaa;
 }
 
-.login-submit-note-wrapper p a:hover,
-.login-submit-note-wrapper p a:active {
+.login-submit-note-wrapper a:hover,
+.login-submit-note-wrapper a:active {
   color: #e84d37;
 
   border-bottom: 1px solid #f9cdc4;
+}
+
+.login-submit-note-wrapper .login-hint:hover a,
+.login-submit-note-wrapper .login-new:hover a,
+.login-submit-note-wrapper .login-hint:active a,
+.login-submit-note-wrapper .login-hint:active a {
+  color: #e84d37;  
 }
 
 .login:hover .login-form {
@@ -3175,7 +3319,6 @@ table img {
 
 
  
-
 
 
 

@@ -39,16 +39,20 @@
                     <form class="" action="#" method="post">
                       <p>
                         <label class="visually-hidden" for="login-form-data">Почта</label>
-                        <input type="email" name="login-email" id="login-form-data" placeholder="Электронная почта" class="writing">
+                        <div class="login-input-wrapper">
+                          <input type="email" name="login-email" id="login-form-data" placeholder="Электронная почта" class="writing">
+                        </div>
                       </p>
                       <p>
                         <label class="visually-hidden" for="login-form-password">Пароль</label>
-                        <input type="password" name="login-password" id="login-form-password" placeholder="Пароль" class="writing">
+                        <div class="login-input-wrapper">
+                          <input type="password" name="login-password" id="login-form-password" placeholder="Пароль" class="writing">
+                        </div>
                       </p>
                       <div class="login-submit-note-wrapper">
                         <p class="login-note">
-                          <a href="#">Забыли пароль?</a> <br>
-                          <a href="#">Новая регистрация</a>
+                          <span class="login-hint"><a href="#">Забыли пароль?</a></span> 
+                          <span class="login-new"><a href="#">Новая регистрация</a></span>
                         </p>                
                         <button type="submit">Войти</button>
                       </div>
@@ -64,10 +68,12 @@
                   <p class="visually-hidden">Поиск</p>
                 </a>
                 <ul class="search-dropdown">
-                <li>
+                <li>                 
                   <form class="search-form">
-                    <input type="search" name="search" placeholder="Что ищем?">        
-                  </form>
+                    <div class="search-wrapper">
+                      <input type="search" name="search" placeholder="Что ищем?">
+                    </div>        
+                  </form>                  
                 </li>
               </ul>
               </li>
@@ -75,7 +81,9 @@
           </nav>
         </div>
         <div class="time-tel">
-          <p><span class="work-time">C 10 до 20, ежедневно</span><br><span class="telephone">8 812 450-25-25</span></p>
+          <p><span class="work-time">C 10 до 20, ежедневно</span>
+             <span class="telephone">8 812 450-25-25</span>
+          </p>
         </div>
   	  </header>
     </div>
@@ -113,18 +121,16 @@
         <section class="banner">
           <ul class="banner-actions">
             <li class="banner-actions-item">
-              <div>        
+              <div class="actions-raspberry">        
                 <h4>Малинка даром!</h4>
-                <p>При покупке 2 кг любого фруктового мороженого, добавим <br> в ваш заказ банку малинового варенья бесплатно.</p>        
-                <img src="img/raspberry-back.jpg" width="787" height="410" alt="Малинка даром!">        
+                При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.             
                 <a class="button" href="#">Хочу варенье!</a>
               </div>
             </li>
             <li class="banner-actions-item">
-              <div>
+              <div class="actions-choco">
                 <h4>Шоколадки даром!</h4>
-                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>        
-                <img src="img/chocolate-back.jpg" width="787" height="410" alt="Шоколадки даром!">          
+                При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.        
                 <a class="button" href="#">Хочу шоколадки!</a>
               </div>
             </li>           
@@ -172,10 +178,10 @@
           <div class="features-block">
             <p class="substance">Магазин Глэйси — это онлайн- и оффлайн-магазин по продаже мороженого собственного производства на развес.</p>  
             <ul class="features-list">
-              <li class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования<br> и проверенных временем технологий.</li>       
+              <li class="feature-item">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>       
               <li class="feature-item">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
               <li class="feature-item">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-              <li class="feature-item">Доставка нашего мороженого до заказчиков осуществляется<br> в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+              <li class="feature-item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             </ul>
           </div>
         </section>
@@ -193,11 +199,11 @@
               <div class="subscription">
                 <div class="subscription-bg">
                 <h2 class="visually-hidden">Подписка</h2>
-                <p class="subscription-note">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить<br> и не слать всякой ненужной ерунды. Честно =)</p>              
+                <p class="subscription-note">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>              
                 <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                   <p>
                     <label class="visually-hidden" for="subscription-form-email">Почта</label>
-                    <input type="email" name="subscription" id="subscription-form-email" placeholder="Электронная почта" class="writing">
+                    <div class="input-wrapper"><input type="email" name="subscription" id="subscription-form-email" placeholder="Электронная почта" class="writing"></div>
                   </p>
                   <button type="submit">Отправить</button>
                 </form>              
@@ -207,11 +213,17 @@
           </li>
         </ul>         
         <section class="map">        
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6078734770583!2d30.320442215867313!3d59.93864868187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1512679992643" height="431" style="border:0" allowfullscreen></iframe>         
+          <h2 class="visually-hidden">Как нас найти</h2>                  
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1998.6078734770583!2d30.320442215867313!3d59.93864868187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8gMTkvOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1512679992643" height="431" style="border:0" allowfullscreen></iframe>
+          <div class="map-wrapper">
+            <img src="img/map.jpg" max-width="1200" height="auto" alt="Карта" class="map-static"><img src="img/pin.png" width="218" height="142" alt="Указатель" class="map-pin">
+          </div>
           <div class="contact-information">
-            <p class="contact">Адрес главного офиса <br> и офлайн-магазина:<br><span class="contacts-base">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span></p>
-            <p class="contact-tel">Для заказов по телефону:<br><span class="contacts-base">8 812 450-25-25</span><br><span class="contacts-time">(c 10 до 20 ежедневно)</span></p>
+            <p class="contact">
+              <span class="contact-addres">Адрес главного офиса и офлайн-магазина:</span>
+              <span class="contacts-base">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+            </p>
+            <p class="contact-tel">Для заказов по телефону:<span class="contacts-base">8 812 450-25-25</span><span class="contacts-time">(c 10 до 20 ежедневно)</span></p>
             <a class="button-feedback-form" href="form.html">Форма обратной связи</a>
           </div>                  
         </section>
@@ -280,7 +292,7 @@
             <p class="footer-copyright">
               <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-html">
               <img src="img/logo-htmlacademy.svg"  width="108" height="39" alt="HTML Academy">
-              </a><br>
+              </a>
               <span class="copyright-text">Сделано в  
                 <a href="https://htmlacademy.ru/intensive/htmlcss" class="htmlacademy-link">
             HTML Academy
@@ -293,19 +305,21 @@
     <section class="modal-feedback-form"> 
       <h2 class="visually-hidden">Форма обратной связи</h2>      
       <form class="feedback-form" action="#" method="post">
-        <p class="note">Мы обязательно вам ответим!</p> 
-        <p>
+        <p class="note">Мы обязательно вам ответим!</p>        
           <label class="visually-hidden" for="feedback-form-name">Ваше имя</label>
-          <input type="text" name="feedback-name" id="feedback-form-name" placeholder="Как вас зовут?" class="writing">
-        </p>
+          <div class="modal-input-wrapper">
+            <input type="text" name="feedback-name" id="feedback-form-name" placeholder="Как вас зовут?" class="writing">
+          </div>        
         <p>
           <label class="visually-hidden" for="feedback-form-email">Ваша почта</label>
-          <input type="email" name="feedback-email" id="feedback-form-email" placeholder="Ваша почта для ответа?" class="writing">
-        </p>
-        <p class="textarea-feedback">
+          <div class="modal-input-wrapper">
+            <input type="email" name="feedback-email" id="feedback-form-email" placeholder="Ваша почта для ответа?" class="writing">
+          </div>
+        </p>        
           <label class="visually-hidden" for="feedback-form-proposal">Ваше предложение</label>
-          <textarea name="feedback-proposal" id="feedback-form-proposal" placeholder="Напишите что-нибудь..." class="writing"></textarea>
-        </p>
+          <div class="modal-textarea-wrapper">
+            <textarea name="feedback-proposal" id="feedback-form-proposal" placeholder="Напишите что-нибудь..." class="writing"></textarea>
+          </div>        
         <p class="feedback-submit">
           <button type="submit" class="send">Отправить</button>
         </p>
