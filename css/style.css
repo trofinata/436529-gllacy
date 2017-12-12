@@ -1323,7 +1323,7 @@ input .visually-hidden {
   position: absolute;
 
   top: 65px;
-  left: 948px;
+  left: 925px;
 
   background-color: #fefefe;
 
@@ -2074,6 +2074,8 @@ li.site-navigation-current:hover a {
 .modal-input-wrapper {
   width: 281px;
   height: 36px;
+
+  margin-bottom: 20px;
 }
 
 .modal-textarea-wrapper {
